@@ -1,0 +1,79 @@
+$products-spacing-unit: $base-spacing-unit !default;
+
+$products-border-width: 1px !default;
+$products-border-style: solid !default;
+$products-border-color: $border-color !default;
+
+.tailor-ui {
+
+	.tailor-products {
+		margin-bottom: #{$products-spacing-unit}em;
+		border-style: $products-border-style;
+		border-color: $products-border-color;
+
+		.entry {
+			margin-bottom: #{$products-spacing-unit}em;
+			text-align: center;
+		}
+
+		.entry__title {
+			margin: 1em 0 0.5em;
+
+			a {
+				color: inherit;
+			}
+		}
+
+		.entry__price {
+			display: block;
+			font-size: 0.875em;
+		}
+
+		.entry__thumbnail {
+			overflow: hidden;
+
+			a {
+				display: block;
+				border: none;
+				outline: none;
+			}
+
+			img {
+				margin: 0;
+			}
+		}
+	}
+
+	.tailor-grid--products {
+
+		.tailor-grid {
+			display: block;
+		}
+
+		.tailor-grid__item {
+			padding: 1em;
+		}
+	}
+
+	.tailor-list--products {
+
+		.entry:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.tailor-products--boxed {
+
+		.entry {
+			border: $products-border-width $products-border-style $products-border-color;
+			background-color: #fff;
+			overflow: hidden;
+		}
+
+		.entry__content {
+			padding-right: 2em;
+			padding-bottom: 2em;
+			padding-left: 2em;
+		}
+	}
+}

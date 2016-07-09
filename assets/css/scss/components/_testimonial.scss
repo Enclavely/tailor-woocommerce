@@ -1,0 +1,65 @@
+$testimonial-spacing-unit: $base-spacing-unit !default;
+$testimonial-border-width: 1px !default;
+$testimonial-border-color: $border-color !default;
+$testimonial-border-radius: $border-radius !default;
+$testimonial-box-shadow: $box-shadow !default;
+
+.tailor-ui {
+
+	.testimonial {
+		position: relative;
+		padding: 1em;
+		border: $testimonial-border-width solid $testimonial-border-color;
+		margin-bottom: #{$testimonial-spacing-unit}em;
+
+		.testimonial__content {
+			padding-left: 2em;
+			margin: 0;
+			border: none;
+
+			.tailor-element:first-child {
+				position: relative;
+
+				p:first-child {
+
+					&::before {
+						position: absolute;
+						top: -0.125em;
+						left: -0.55em;
+						display: block;
+						content: "\201c";
+						font-size: 4em;
+						line-height: 1;
+						font-family: Calibri, Times New Roman, serif;
+					}
+				}
+			}
+		}
+
+		.testimonial__attribution {
+			position: relative;
+			padding: 0 1em;
+			font-weight: bold;
+			float: right;
+
+			&::before {
+				position: absolute;
+				left: 0;
+				content: "\2013\00A0";
+				color: #666;
+			}
+
+			.testimonial__citation {
+				font-style: italic;
+			}
+
+			.testimonial__author,
+			.testimonial__citation {
+				padding: 0;
+				margin: 0;
+			}
+		}
+
+		@include clearfix;
+	}
+}
