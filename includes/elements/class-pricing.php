@@ -31,17 +31,17 @@ if ( class_exists( 'Tailor_Element' ) && ! class_exists( 'Tailor_Pricing_Element
 	    protected function register_controls() {
 
 		    $this->add_section( 'general', array(
-			    'title'                 =>  __( 'General', tailor()->textdomain() ),
+			    'title'                 =>  __( 'General', 'tailor-woocommerce' ),
 			    'priority'              =>  10,
 		    ) );
 
 		    $this->add_section( 'colors', array(
-			    'title'                 =>  __( 'Colors', tailor()->textdomain() ),
+			    'title'                 =>  __( 'Colors', 'tailor-woocommerce'),
 			    'priority'              =>  20,
 		    ) );
 
 		    $this->add_section( 'attributes', array(
-			    'title'                 =>  __( 'Attributes', tailor()->textdomain() ),
+			    'title'                 =>  __( 'Attributes', 'tailor-woocommerce' ),
 			    'priority'              =>  30,
 		    ) );
 
@@ -51,7 +51,7 @@ if ( class_exists( 'Tailor_Element' ) && ! class_exists( 'Tailor_Pricing_Element
 			    'sanitize_callback'     =>  'tailor_sanitize_text',
 		    ) );
 		    $this->add_control( 'title', array(
-			    'label'                 =>  __( 'Title', tailor()->textdomain() ),
+			    'label'                 =>  __( 'Title', 'tailor-woocommerce' ),
 			    'type'                  =>  'text',
 			    'priority'              =>  $priority += 10,
 			    'section'               =>  'general',
@@ -61,7 +61,7 @@ if ( class_exists( 'Tailor_Element' ) && ! class_exists( 'Tailor_Pricing_Element
 			    'sanitize_callback'     =>  'tailor_sanitize_number',
 		    ) );
 		    $this->add_control( 'price', array(
-			    'label'                 =>  __( 'Price', tailor()->textdomain() ),
+			    'label'                 =>  __( 'Price', 'tailor-woocommerce' ),
 			    'type'                  =>  'number',
 			    'priority'              =>  $priority += 10,
 			    'section'               =>  'general',
@@ -71,7 +71,7 @@ if ( class_exists( 'Tailor_Element' ) && ! class_exists( 'Tailor_Pricing_Element
 			    'sanitize_callback'     =>  'tailor_sanitize_text',
 		    ) );
 		    $this->add_control( 'period', array(
-			    'label'                 =>  __( 'Period', tailor()->textdomain() ),
+			    'label'                 =>  __( 'Period', 'tailor-woocommerce' ),
 			    'type'                  =>  'text',
 			    'priority'              =>  $priority += 10,
 			    'section'               =>  'general',
@@ -81,10 +81,10 @@ if ( class_exists( 'Tailor_Element' ) && ! class_exists( 'Tailor_Pricing_Element
 			    'sanitize_callback'     =>  'tailor_sanitize_number',
 		    ) );
 		    $this->add_control( 'featured', array(
-			    'label'                 =>  __( 'Featured', tailor()->textdomain() ),
+			    'label'                 =>  __( 'Featured', 'tailor-woocommerce' ),
 			    'type'                  =>  'checkbox',
 			    'choices'               =>  array(
-				    '1'                     =>  __( 'Display as featured?', tailor()->textdomain() ),
+				    '1'                     =>  __( 'Display as featured?', 'tailor-woocommerce' ),
 			    ),
 			    'priority'              =>  $priority += 10,
 			    'section'               =>  'general',

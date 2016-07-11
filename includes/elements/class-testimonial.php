@@ -31,17 +31,17 @@ if ( class_exists( 'Tailor_Element' ) && ! class_exists( 'Tailor_Testimonial_Ele
         protected function register_controls() {
 
 	        $this->add_section( 'general', array(
-		        'title'                 =>  __( 'General', tailor()->textdomain() ),
+		        'title'                 =>  __( 'General', 'tailor-woocommerce'  ),
 		        'priority'              =>  10,
 	        ) );
 
 	        $this->add_section( 'colors', array(
-		        'title'                 =>  __( 'Colors', tailor()->textdomain() ),
+		        'title'                 =>  __( 'Colors', 'tailor-woocommerce'  ),
 		        'priority'              =>  20,
 	        ) );
 
 	        $this->add_section( 'attributes', array(
-		        'title'                 =>  __( 'Attributes', tailor()->textdomain() ),
+		        'title'                 =>  __( 'Attributes', 'tailor-woocommerce'  ),
 		        'priority'              =>  30,
 	        ) );
 
@@ -51,7 +51,7 @@ if ( class_exists( 'Tailor_Element' ) && ! class_exists( 'Tailor_Testimonial_Ele
 		        'sanitize_callback'     =>  'tailor_sanitize_text',
 	        ) );
 	        $this->add_control( 'author', array(
-		        'label'                 =>  __( 'Author', tailor()->textdomain() ),
+		        'label'                 =>  __( 'Author', 'tailor-woocommerce'  ),
 		        'type'                  =>  'text',
 		        'priority'              =>  $priority += 10,
 		        'section'               =>  'general',
@@ -61,7 +61,7 @@ if ( class_exists( 'Tailor_Element' ) && ! class_exists( 'Tailor_Testimonial_Ele
 		        'sanitize_callback'     =>  'tailor_sanitize_text',
 	        ) );
 	        $this->add_control( 'citation', array(
-		        'label'                 =>  __( 'Citation', tailor()->textdomain() ),
+		        'label'                 =>  __( 'Citation', 'tailor-woocommerce'  ),
 		        'type'                  =>  'text',
 		        'priority'              =>  $priority += 10,
 		        'section'               =>  'general',

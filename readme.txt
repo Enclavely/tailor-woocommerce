@@ -13,7 +13,16 @@ Create a stylish storefront with this powerful new extension for the free Tailor
 
 This [extension](http://gettailor.com/extensions) provides e-commerce functionality to the [Tailor](https://wordpress.org/plugins/tailor) frontend page builder based on the popular WooCommerce plugin.  Display products, testimonials and pricing information easily using Tailor's simple and intuitive drag and drop interface.
 
-We're keen to get your feedback so that we can make Tailor (and this extension) better!  Say hi at [@tailorwp](https://twitter.com/tailorwp) or [@andrewjworsfold](https://twitter.com/andrewjworsfold)
+To get started with Tailor, refer to our [documentation](https://tailor.zendesk.com/hc/en-us/categories/202586427-Getting-started).
+
+You can get in touch with questions or recommendations in a number of ways:
+
+1. [Facebook](https://www.facebook.com/tailorwp/) or Twitter at [@tailorwp](https://twitter.com/tailorwp) or [@andrewjworsfold](https://twitter.com/andrewjworsfold).
+2. The [Help Center](http://support.gettailor.com)
+3. The [GitHub project](https://github.com/andrew-worsfold/tailor-woocommerce)
+4. The [Community Forum](https://tailor.zendesk.com/hc/en-us/community/topics)
+
+If you like the plugin, you can help by [rating it](https://wordpress.org/support/view/plugin-reviews/tailor-woocommerce?rate=5#postform).
 
 == Installation ==
 
@@ -21,9 +30,21 @@ We're keen to get your feedback so that we can make Tailor (and this extension) 
 
 2. Install the extension via the plugin directory, or by uploading the files manually to your server.
 
-== Screenshots ==
+= From your WordPress dashboard =
 
-1. **Elements panel** - The new Products element will appear in the Elements list once the extension is successfully installed.
+1. Visit 'Plugins > Add New’.
+
+2. Search for ‘Tailor’.
+
+3. Activate Tailor from your Plugins page.  Do the same for the WooCommerce extension.
+
+= From WordPress.org =
+
+1. Download Tailor and the WooCommerce extension.
+
+2. Upload the ‘tailor’ directory to your '/wp-content/plugins/' directory, using your favorite method (ftp, sftp, scp, etc..).  Do the same for the 'tailor-woocommerce' directory.
+
+3. Activate Tailor and the WooCommerce extension from your Plugins page.
 
 == Frequently Asked Questions ==
 

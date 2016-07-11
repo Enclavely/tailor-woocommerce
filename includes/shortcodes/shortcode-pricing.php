@@ -17,10 +17,10 @@ if ( ! function_exists( 'tailor_shortcode_pricing' ) ) {
         $atts = shortcode_atts( array(
             'id'                =>  '',
             'class'             =>  '',
-            'title'             =>  __( 'Standard plan', tailor()->textdomain() ),
+            'title'             =>  __( 'Standard plan', 'tailor-woocommerce' ),
             'price'             =>  '9',
             'currency'          =>  '$',
-            'period'            =>  __( 'month', tailor()->textdomain() ),
+            'period'            =>  __( 'month', 'tailor-woocommerce' ),
             'featured'          =>  false,
         ), $atts, $tag );
 
