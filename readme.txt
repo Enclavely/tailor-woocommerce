@@ -46,6 +46,14 @@ If you like the plugin, you can help by [rating it](https://wordpress.org/suppor
 
 3. Activate Tailor and the WooCommerce extension from your Plugins page.
 
+== Screenshots ==
+
+1. **Products element** - Display products from your store in highly customizable list, grid and carousel layouts.
+
+2. **Pricing element** - Display your pricing structure using pricing tables.  Create a column structure to highlight multiple pricing plans.
+
+3. **Testimonials element** - Display customer testimonials or any other social proof anywhere on your site.
+
 == Frequently Asked Questions ==
 
 = Can I use my existing WordPress theme? =
