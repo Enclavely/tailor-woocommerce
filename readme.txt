@@ -1,4 +1,4 @@
-=== WooCommerce extension for the Tailor frontend builder ===
+=== Tailor Page Builder: WooCommerce Extension ===
 Tags: frontend, woocommerce, ecommerce, products, product, shop, extension, tailor, content, layout creator, responsive, page builder, visual composer, drag and drop builder, frontend editor
 Requires at least: 4.3
 Tested up to: 4.5.3
@@ -11,7 +11,7 @@ Create a stylish storefront with this powerful new extension for the free Tailor
 
 == Description ==
 
-This [extension](http://gettailor.com/extensions) provides e-commerce functionality to the [Tailor](https://wordpress.org/plugins/tailor) frontend page builder based on the popular WooCommerce plugin.  Display products, testimonials and pricing information easily using Tailor's simple and intuitive drag and drop interface.
+This extension provides e-commerce functionality to the [Tailor](https://wordpress.org/plugins/tailor) frontend page builder based on the popular WooCommerce plugin.  Display products, testimonials and pricing information easily using Tailor's simple and intuitive drag and drop interface.
 
 To get started with Tailor, refer to our [documentation](https://tailor.zendesk.com/hc/en-us/categories/202586427-Getting-started).
 
