@@ -2,7 +2,7 @@
 Tags: frontend, woocommerce, ecommerce, products, product, shop, extension, tailor, content, layout creator, responsive, page builder, visual composer, drag and drop builder, frontend editor
 Requires at least: 4.3
 Tested up to: 4.5.3
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl.html
 Contributors: andrew.worsfold
@@ -65,6 +65,10 @@ Yes! Tailor (and this extension) works out-of-the-box with nearly every WordPres
 Yes, however, users should be directed to the WordPress plugin repository to install the latest version of the plugin/extension.  Consider using a tool like [TGM Plugin Activation](http://tgmpluginactivation.com/) to guide users through the installation process.
 
 == Changelog ==
+
+= 1.0.1 =
+* Added: check to ensure WooCommerce pages (Shop, Cart, Checkout and My Account) cannot be Tailored.
+* Added: custom icons for WooCommerce related elements.
 
 = 1.0.0 =
 * Initial release.

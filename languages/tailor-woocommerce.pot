@@ -1,0 +1,152 @@
+# Copyright (C) 2016 Tailor - WooCommerce extension
+# This file is distributed under the same license as the Tailor - WooCommerce extension package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Tailor - WooCommerce extension 1.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/tailor-woocommerce\n"
+"POT-Creation-Date: 2016-07-26 02:21:36+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: includes/elements/class-pricing.php:34
+#: includes/elements/class-products.php:33
+#: includes/elements/class-testimonial.php:34
+msgid "General"
+msgstr ""
+
+#: includes/elements/class-pricing.php:39
+#: includes/elements/class-products.php:43
+#: includes/elements/class-testimonial.php:39
+msgid "Colors"
+msgstr ""
+
+#: includes/elements/class-pricing.php:44
+#: includes/elements/class-products.php:48
+#: includes/elements/class-testimonial.php:44
+msgid "Attributes"
+msgstr ""
+
+#: includes/elements/class-pricing.php:54
+msgid "Title"
+msgstr ""
+
+#: includes/elements/class-pricing.php:64
+#: includes/elements/class-products.php:169
+msgid "Price"
+msgstr ""
+
+#: includes/elements/class-pricing.php:74
+msgid "Period"
+msgstr ""
+
+#: includes/elements/class-pricing.php:84
+msgid "Featured"
+msgstr ""
+
+#: includes/elements/class-pricing.php:87
+msgid "Display as featured?"
+msgstr ""
+
+#: includes/elements/class-products.php:38
+msgid "Query"
+msgstr ""
+
+#: includes/elements/class-products.php:75
+msgid "Default"
+msgstr ""
+
+#: includes/elements/class-products.php:76
+msgid "Boxed"
+msgstr ""
+
+#: includes/elements/class-products.php:86
+msgid "List"
+msgstr ""
+
+#: includes/elements/class-products.php:87
+msgid "Grid"
+msgstr ""
+
+#: includes/elements/class-products.php:88
+msgid "Carousel"
+msgstr ""
+
+#: includes/elements/class-products.php:170
+msgid "Product Image"
+msgstr ""
+
+#: includes/elements/class-products.php:223
+msgid "Category"
+msgstr ""
+
+#: includes/elements/class-products.php:234
+msgid "Tag"
+msgstr ""
+
+#: includes/elements/class-testimonial.php:54
+msgid "Author"
+msgstr ""
+
+#: includes/elements/class-testimonial.php:64
+msgid "Citation"
+msgstr ""
+
+#: includes/shortcodes/shortcode-pricing.php:20
+msgid "Standard plan"
+msgstr ""
+
+#: includes/shortcodes/shortcode-pricing.php:23
+msgid "month"
+msgstr ""
+
+#: tailor-woocommerce.php:268
+msgid "Products"
+msgstr ""
+
+#: tailor-woocommerce.php:269
+msgid "Your site's products."
+msgstr ""
+
+#: tailor-woocommerce.php:270 tailor-woocommerce.php:279
+#: tailor-woocommerce.php:287
+msgid "WooCommerce"
+msgstr ""
+
+#: tailor-woocommerce.php:276
+msgid "Pricing"
+msgstr ""
+
+#: tailor-woocommerce.php:277
+msgid "A pricing table column."
+msgstr ""
+
+#: tailor-woocommerce.php:284
+msgid "Testimonial"
+msgstr ""
+
+#: tailor-woocommerce.php:285
+msgid "A testimonial block."
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "Tailor - WooCommerce extension"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.gettailor.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Adds WooCommerce support and shop functionality to the Tailor plugin."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Andrew Worsfold"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://wwww.andrewworsfold.com"
+msgstr ""

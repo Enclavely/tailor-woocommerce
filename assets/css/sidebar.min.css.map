@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAME,gEAAU,CACT,OAAO,CAAE,OAAO,CAMjB,mCAAU,CACT,OAAO,CAAE,OAAO",
+"sources": ["scss/sidebar.scss"],
+"names": [],
+"file": "sidebar.min.css"
+}

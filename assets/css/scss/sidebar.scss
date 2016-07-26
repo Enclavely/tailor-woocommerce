@@ -1,0 +1,18 @@
+
+.list {
+
+	.element--products,
+	.element--pricing {
+
+		&::before {
+			content: "\f174";
+		}
+	}
+
+	.element--testimonial {
+
+		&::before {
+			content: "\f122";
+		}
+	}
+}
