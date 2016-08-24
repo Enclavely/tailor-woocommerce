@@ -67,7 +67,7 @@ Yes, however, users should be directed to the WordPress plugin repository to ins
 == Changelog ==
 
 = 1.1.0 =
-* Updated: Compatibility with new and improved Tailor JS API.
+* Updated: Compatibility with new and improved Tailor JS API.  Please ensure you upgrade to Tailor 1.5.0 or later.
 
 = 1.0.1 =
 * Added: Check to ensure WooCommerce pages (Shop, Cart, Checkout and My Account) cannot be Tailored.
@@ -77,3 +77,6 @@ Yes, however, users should be directed to the WordPress plugin repository to ins
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.1.0 =
+* This update provides compatibility for the new JS API provided in Tailor 1.5.0.  Please ensure that you also upgrade Tailor to at least 1.5.0.
