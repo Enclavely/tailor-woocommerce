@@ -24,6 +24,7 @@ $post = get_post(); ?>
 	if ( in_array( 'thumbnail', $meta ) ) {
 		tailor_partial( 'meta', 'thumbnail', array(
             'image_size'        =>  $image_size,
+            'image_link'        =>  'post',
             'aspect_ratio'      =>  $aspect_ratio,
             'stretch'           =>  $stretch,
             'lightbox'          =>  $lightbox,

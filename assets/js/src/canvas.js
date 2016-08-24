@@ -1,9 +1,9 @@
 
-( function( Tailor, Api, $ ) {
+( function( app, ElementAPI, Views ) {
 
     'use strict';
 
-	Api.Element.onRender( 'tailor_products', function( atts, model ) {
+	ElementAPI.onRender( 'tailor_products', function( atts, model ) {
 		var $el = this.$el;
 		var options;
 
@@ -22,10 +22,11 @@
 		else if ( 'grid' == atts.layout && atts.masonry ) {
 			$el.tailorMasonry();
 		}
-
-		Api.Setting( '_tailor_element_spacing', function( to, from ) {
-			this.triggerAll( 'element:parent:change', this );
-		} );
     } );
 
-} ) ( window.Tailor, window.Tailor.Api, jQuery );
+	app.on( 'before:start', function() {
+		Views.TailorPricing = require( './components/elements/wrappers/pricing' );
+		Views.TailorTestimonial = require( './components/elements/wrappers/testimonial' );
+	} );
+	
+} ) ( window.app, window.Tailor.Api.Element, Tailor.Views || {} );

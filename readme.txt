@@ -2,7 +2,7 @@
 Tags: frontend, woocommerce, ecommerce, products, product, shop, extension, tailor, content, layout creator, responsive, page builder, visual composer, drag and drop builder, frontend editor
 Requires at least: 4.3
 Tested up to: 4.5.3
-Stable tag: 1.0.1
+Stable tag: 1.1.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl.html
 Contributors: andrew.worsfold
@@ -66,9 +66,12 @@ Yes, however, users should be directed to the WordPress plugin repository to ins
 
 == Changelog ==
 
+= 1.1.0 =
+* Updated: Compatibility with new and improved Tailor JS API.
+
 = 1.0.1 =
-* Added: check to ensure WooCommerce pages (Shop, Cart, Checkout and My Account) cannot be Tailored.
-* Added: custom icons for WooCommerce related elements.
+* Added: Check to ensure WooCommerce pages (Shop, Cart, Checkout and My Account) cannot be Tailored.
+* Added: Custom icons for WooCommerce related elements.
 
 = 1.0.0 =
 * Initial release.
