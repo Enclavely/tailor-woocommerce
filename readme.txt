@@ -1,8 +1,8 @@
 === Tailor Page Builder: WooCommerce Extension ===
 Tags: frontend, woocommerce, ecommerce, products, product, shop, extension, tailor, content, layout creator, responsive, page builder, visual composer, drag and drop builder, frontend editor
 Requires at least: 4.3
-Tested up to: 4.5.3
-Stable tag: 1.1.0
+Tested up to: 4.6.2
+Stable tag: 1.1.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl.html
 Contributors: andrew.worsfold
