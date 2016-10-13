@@ -24,25 +24,6 @@
 			$el.tailorMasonry();
 		}
     } );
-
-	app.on( 'before:start', function() {
-		Views.TailorPricing = require( './components/elements/wrappers/pricing' );
-		Views.TailorTestimonial = require( './components/elements/wrappers/testimonial' );
-	} );
 	
 } ) ( window.app, window.Tailor.Api.Element, Tailor.Views || {} );
-},{"./components/elements/wrappers/pricing":2,"./components/elements/wrappers/testimonial":3}],2:[function(require,module,exports){
-
-module.exports = Tailor.Views.Wrapper.extend( {
-
-    childViewContainer : '.pricing__content'
-
-} );
-},{}],3:[function(require,module,exports){
-
-module.exports = Tailor.Views.Wrapper.extend( {
-
-    childViewContainer : '.testimonial__content'
-
-} );
 },{}]},{},[1]);

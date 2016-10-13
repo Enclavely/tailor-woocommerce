@@ -66,6 +66,11 @@ Yes, however, users should be directed to the WordPress plugin repository to ins
 
 == Changelog ==
 
+= 1.1.1 =
+* Added - Filter to modify the rendered HTML of a given element.
+* Updated: Compatibility with new method of registering elements in Tailor.  Please ensure you upgrade to Tailor 1.6.0 or later.
+* Removed - Unnecessary child views.
+
 = 1.1.0 =
 * Updated: Compatibility with new and improved Tailor JS API.  Please ensure you upgrade to Tailor 1.5.0 or later.
 
@@ -77,6 +82,9 @@ Yes, however, users should be directed to the WordPress plugin repository to ins
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.1.1 =
+* This update provides compatibility for the new method of registering element child container in Tailor 1.6.0.  Please ensure that you also upgrade Tailor to at least 1.6.0.
 
 = 1.1.0 =
 * This update provides compatibility for the new JS API provided in Tailor 1.5.0.  Please ensure that you also upgrade Tailor to at least 1.5.0.
