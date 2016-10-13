@@ -31,16 +31,28 @@ if ( ! function_exists( 'tailor_shortcode_pricing' ) ) {
 		    $class .= ' pricing--featured';
 	    }
 
-	    return  '<div ' . trim( "{$id} class=\"{$class}\"" ) . '>' .
-	                '<h3 class="pricing__title">' . esc_attr( $atts['title'] ) . '</h3>' .
-                    //'<p class="pricing__subtitle"></p>' .
-                    '<div class="pricing__price">' .
+	    $outer_html = '<div ' . trim( "{$id} class=\"{$class}\"" ) . '>%s</div>';
+
+	    $inner_html = '<h3 class="pricing__title">' . esc_attr( $atts['title'] ) . '</h3>' .
+	                  '<div class="pricing__price">' .
 	                    '<span class="pricing__currency">' . esc_attr( $atts['currency'] ) . '</span>' . esc_attr( $atts['price'] ) .
 	                    '<span class="pricing__period">/ ' . esc_attr( $atts['period'] ) . '</span>' .
-	                '</div>' .
-                    '<div class="pricing__content">' . do_shortcode( $content ) .'</div>' .
-                '</div>';
-	        }
+	                  '</div>' .
+	                  '<div class="pricing__content">' . do_shortcode( $content ) .'</div>';
+
+	    /**
+	     * Filter the HTML for the element.
+	     *
+	     * @since 1.1.1
+	     *
+	     * @param string $outer_html
+	     * @param string $inner_html
+	     * @param array $atts
+	     */
+	    $html = apply_filters( 'tailor_shortcode_pricing_html', sprintf( $outer_html, $inner_html ), $outer_html, $inner_html, $atts );
+
+	    return $html;
+    }
 
     add_shortcode( 'tailor_pricing', 'tailor_shortcode_pricing' );
 }
