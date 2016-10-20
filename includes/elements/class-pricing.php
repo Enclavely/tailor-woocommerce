@@ -49,6 +49,7 @@ if ( class_exists( 'Tailor_Element' ) && ! class_exists( 'Tailor_Pricing_Element
 
 		    $this->add_setting( 'title', array(
 			    'sanitize_callback'     =>  'tailor_sanitize_text',
+			    'default'               =>  __( 'Standard plan', 'tailor-woocommerce' ),
 		    ) );
 		    $this->add_control( 'title', array(
 			    'label'                 =>  __( 'Title', 'tailor-woocommerce' ),
@@ -59,6 +60,7 @@ if ( class_exists( 'Tailor_Element' ) && ! class_exists( 'Tailor_Pricing_Element
 
 		    $this->add_setting( 'price', array(
 			    'sanitize_callback'     =>  'tailor_sanitize_number',
+			    'default'               =>  '9',
 		    ) );
 		    $this->add_control( 'price', array(
 			    'label'                 =>  __( 'Price', 'tailor-woocommerce' ),
@@ -67,14 +69,38 @@ if ( class_exists( 'Tailor_Element' ) && ! class_exists( 'Tailor_Pricing_Element
 			    'section'               =>  'general',
 		    ) );
 
+		    $this->add_setting( 'currency', array(
+			    'sanitize_callback'     =>  'tailor_sanitize_text',
+			    'default'               =>  '$',
+		    ) );
+		    $this->add_control( 'currency', array(
+			    'label'                 =>  __( 'Currency', 'tailor-woocommerce' ),
+			    'type'                  =>  'text',
+			    'priority'              =>  $priority += 10,
+			    'section'               =>  'general',
+			    'dependencies'          =>  array(
+				    'price'                 =>  array(
+					    'condition'             =>  'not',
+					    'value'                 =>  '',
+				    ),
+			    ),
+		    ) );
+
 		    $this->add_setting( 'period', array(
 			    'sanitize_callback'     =>  'tailor_sanitize_text',
+			    'default'               =>  _x( 'month', 'pricing period', 'tailor-woocommerce' ),
 		    ) );
 		    $this->add_control( 'period', array(
 			    'label'                 =>  __( 'Period', 'tailor-woocommerce' ),
 			    'type'                  =>  'text',
 			    'priority'              =>  $priority += 10,
 			    'section'               =>  'general',
+			    'dependencies'          =>  array(
+				    'price'                 =>  array(
+					    'condition'             =>  'not',
+					    'value'                 =>  '',
+				    ),
+			    ),
 		    ) );
 
 		    $this->add_setting( 'featured', array(

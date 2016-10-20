@@ -14,42 +14,73 @@ if ( ! function_exists( 'tailor_shortcode_pricing' ) ) {
      */
     function tailor_shortcode_pricing( $atts, $content = null, $tag ) {
 
-        $atts = shortcode_atts( array(
-            'id'                =>  '',
-            'class'             =>  '',
-            'title'             =>  __( 'Standard plan', 'tailor-woocommerce' ),
-            'price'             =>  '9',
-            'currency'          =>  '$',
-            'period'            =>  __( 'month', 'tailor-woocommerce' ),
-            'featured'          =>  false,
-        ), $atts, $tag );
+	    /**
+	     * Filter the default shortcode attributes.
+	     *
+	     * @since 1.2.0
+	     *
+	     * @param array
+	     */
+	    $default_atts = apply_filters( 'tailor_shortcode_default_atts_' . $tag, array() );
+	    $atts = shortcode_atts( $default_atts, $atts, $tag );
+	    
+	    $class = explode( ' ', "tailor-element pricing {$atts['class']}" );
+	    if ( '1' == $atts['featured'] ) {
+		    $class[] = 'pricing--featured';
+	    }
+	    
+	    $html_atts = array(
+		    'id'            =>  empty( $atts['id'] ) ? null : $atts['id'],
+		    'class'         =>  $class,
+		    'data'          =>  array(),
+	    );
 
-	    $id = ( '' !== $atts['id'] ) ? 'id="' . esc_attr( $atts['id'] ) . '"' : '';
-	    $class = trim( 'tailor-element pricing ' . trim( esc_attr( $atts['class'] ) ) );
+	    /**
+	     * Filter the HTML attributes for the element.
+	     *
+	     * @since 1.2.0
+	     *
+	     * @param array $html_attributes
+	     * @param array $atts
+	     * @param string $tag
+	     */
+	    $html_atts = apply_filters( 'tailor_shortcode_html_attributes', $html_atts, $atts, $tag );
+	    $html_atts['class'] = implode( ' ', (array) $html_atts['class'] );
+	    $html_atts = tailor_get_attributes( $html_atts );
 
-	    if ( false != $atts['featured'] ) {
-		    $class .= ' pricing--featured';
+	    $title = ( ! empty( $atts['title'] ) ) ? '<h3 class="pricing__title">' . esc_attr( $atts['title'] ) . '</h3>' : '';
+	    $price = '';
+	    if ( ! empty( $atts['price'] ) ) {
+		    $currency = ( ! empty( $atts['currency'] ) ) ? '<span class="pricing__currency">' . esc_attr( $atts['currency'] ) . '</span>' : '';
+		    $period = ( ! empty( $atts['period'] ) ) ? '<span class="pricing__period">/ ' . esc_attr( $atts['period'] ) . '</span>' : '';
+		    $price = '<div class="pricing__price">' .
+		                $currency .
+		                esc_attr( $atts['price'] ) .
+		                $period .
+		             '</div>';
 	    }
 
-	    $outer_html = '<div ' . trim( "{$id} class=\"{$class}\"" ) . '>%s</div>';
-
-	    $inner_html = '<h3 class="pricing__title">' . esc_attr( $atts['title'] ) . '</h3>' .
-	                  '<div class="pricing__price">' .
-	                    '<span class="pricing__currency">' . esc_attr( $atts['currency'] ) . '</span>' . esc_attr( $atts['price'] ) .
-	                    '<span class="pricing__period">/ ' . esc_attr( $atts['period'] ) . '</span>' .
-	                  '</div>' .
-	                  '<div class="pricing__content">' . do_shortcode( $content ) .'</div>';
+	    $outer_html = "<div {$html_atts}>%s</div>";
+	    $inner_html = $title .
+	                  $price .
+	                  '<div class="pricing__content">%s</div>';
+	    $content = do_shortcode( $content );
+	    $html = sprintf( $outer_html, sprintf( $inner_html, $content ) );
 
 	    /**
 	     * Filter the HTML for the element.
 	     *
-	     * @since 1.1.1
+	     * @since 1.2.0
 	     *
+	     * @param string $html
 	     * @param string $outer_html
 	     * @param string $inner_html
+	     * @param string $html_atts
 	     * @param array $atts
+	     * @param string $content
+	     * @param string $tag
 	     */
-	    $html = apply_filters( 'tailor_shortcode_pricing_html', sprintf( $outer_html, $inner_html ), $outer_html, $inner_html, $atts );
+	    $html = apply_filters( 'tailor_shortcode_html', $html, $outer_html, $inner_html, $html_atts, $atts, $content, $tag );
 
 	    return $html;
     }
