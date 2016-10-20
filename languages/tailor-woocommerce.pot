@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the Tailor - WooCommerce extension package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Tailor - WooCommerce extension 1.1.1\n"
+"Project-Id-Version: Tailor - WooCommerce extension 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/tailor-woocommerce\n"
-"POT-Creation-Date: 2016-10-13 11:05:54+00:00\n"
+"POT-Creation-Date: 2016-10-20 08:10:59+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -30,24 +30,37 @@ msgstr ""
 msgid "Attributes"
 msgstr ""
 
-#: includes/elements/class-pricing.php:54
+#: includes/elements/class-pricing.php:52
+msgid "Standard plan"
+msgstr ""
+
+#: includes/elements/class-pricing.php:55
 msgid "Title"
 msgstr ""
 
-#: includes/elements/class-pricing.php:64
-#: includes/elements/class-products.php:169
+#: includes/elements/class-pricing.php:66
+#: includes/elements/class-products.php:173
 msgid "Price"
 msgstr ""
 
-#: includes/elements/class-pricing.php:74
+#: includes/elements/class-pricing.php:77
+msgid "Currency"
+msgstr ""
+
+#: includes/elements/class-pricing.php:91
+msgctxt "pricing period"
+msgid "month"
+msgstr ""
+
+#: includes/elements/class-pricing.php:94
 msgid "Period"
 msgstr ""
 
-#: includes/elements/class-pricing.php:84
+#: includes/elements/class-pricing.php:110
 msgid "Featured"
 msgstr ""
 
-#: includes/elements/class-pricing.php:87
+#: includes/elements/class-pricing.php:113
 msgid "Display as featured?"
 msgstr ""
 
@@ -55,35 +68,35 @@ msgstr ""
 msgid "Query"
 msgstr ""
 
-#: includes/elements/class-products.php:75
+#: includes/elements/class-products.php:79
 msgid "Default"
 msgstr ""
 
-#: includes/elements/class-products.php:76
+#: includes/elements/class-products.php:80
 msgid "Boxed"
 msgstr ""
 
-#: includes/elements/class-products.php:86
+#: includes/elements/class-products.php:90
 msgid "List"
 msgstr ""
 
-#: includes/elements/class-products.php:87
+#: includes/elements/class-products.php:91
 msgid "Grid"
 msgstr ""
 
-#: includes/elements/class-products.php:88
+#: includes/elements/class-products.php:92
 msgid "Carousel"
 msgstr ""
 
-#: includes/elements/class-products.php:170
+#: includes/elements/class-products.php:174
 msgid "Product Image"
 msgstr ""
 
-#: includes/elements/class-products.php:223
+#: includes/elements/class-products.php:250
 msgid "Category"
 msgstr ""
 
-#: includes/elements/class-products.php:234
+#: includes/elements/class-products.php:261
 msgid "Tag"
 msgstr ""
 
@@ -95,40 +108,40 @@ msgstr ""
 msgid "Citation"
 msgstr ""
 
-#: includes/shortcodes/shortcode-pricing.php:20
-msgid "Standard plan"
+#: includes/shortcodes/shortcode-products.php:122
+msgid "Please configure this element as there is currently nothing to display"
 msgstr ""
 
-#: includes/shortcodes/shortcode-pricing.php:23
-msgid "month"
+#: tailor-woocommerce.php:148
+msgid "Please ensure that Tailor 1.7.0 (or newer) is active to use the WooCommerce extension."
 msgstr ""
 
-#: tailor-woocommerce.php:260
+#: tailor-woocommerce.php:276
 msgid "Products"
 msgstr ""
 
-#: tailor-woocommerce.php:261
+#: tailor-woocommerce.php:277
 msgid "Your site's products."
 msgstr ""
 
-#: tailor-woocommerce.php:262 tailor-woocommerce.php:272
-#: tailor-woocommerce.php:281
+#: tailor-woocommerce.php:278 tailor-woocommerce.php:288
+#: tailor-woocommerce.php:298
 msgid "WooCommerce"
 msgstr ""
 
-#: tailor-woocommerce.php:268
+#: tailor-woocommerce.php:284
 msgid "Pricing"
 msgstr ""
 
-#: tailor-woocommerce.php:269
+#: tailor-woocommerce.php:285
 msgid "A pricing table column."
 msgstr ""
 
-#: tailor-woocommerce.php:277
+#: tailor-woocommerce.php:294
 msgid "Testimonial"
 msgstr ""
 
-#: tailor-woocommerce.php:278
+#: tailor-woocommerce.php:295
 msgid "A testimonial block."
 msgstr ""
 #. Plugin Name of the plugin/theme
