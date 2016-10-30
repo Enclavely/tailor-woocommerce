@@ -13,16 +13,16 @@ Create a stylish storefront with this powerful extension for the free Tailor fro
 
 This extension adds e-commerce functionality to the [Tailor](https://wordpress.org/plugins/tailor) frontend page builder based on the popular WooCommerce plugin.  Display products, testimonials and pricing information easily using Tailor's simple and intuitive drag and drop interface.
 
-> Tailor version 1.7.0 (or newer) must be active to use this extension
+> Tailor version 1.7.2 (or newer) must be active to use this extension
 
-To get started with Tailor, refer to our [documentation](https://tailor.zendesk.com/hc/en-us/categories/202586427-Getting-started).
+To get started with Tailor, refer to our [documentation](https://support.gettailor.com/hc/en-us/categories/202586427-Getting-started).
 
 You can get in touch with questions or recommendations in a number of ways:
 
 1. [Facebook](https://www.facebook.com/tailorwp/) or Twitter at [@tailorwp](https://twitter.com/tailorwp) or [@andrewjworsfold](https://twitter.com/andrewjworsfold).
 2. The [Help Center](http://support.gettailor.com)
 3. The [GitHub project](https://github.com/andrew-worsfold/tailor-woocommerce)
-4. The [Community Forum](https://tailor.zendesk.com/hc/en-us/community/topics)
+4. The [Community Forum](https://support.gettailor.com/hc/en-us/community/topics)
 
 If you like the plugin, you can help by [rating it](https://wordpress.org/support/view/plugin-reviews/tailor-woocommerce?rate=5#postform).
 
