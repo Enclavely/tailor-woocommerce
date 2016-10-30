@@ -85,21 +85,38 @@ if ( class_exists( 'Tailor_Element' ) && ! class_exists( 'Tailor_Testimonial_Ele
 		        'border_color',
 	        );
 	        $color_control_arguments = array();
-	        tailor_control_presets( $this, $color_control_types, $color_control_arguments, $priority );
+	        $priority = tailor_control_presets( $this, $color_control_types, $color_control_arguments, $priority );
+
+	        $this->add_setting( 'quote_mark_color', array(
+		        'sanitize_callback'     =>  'tailor_sanitize_color',
+	        ) );
+	        $this->add_control( 'quote_mark_color', array(
+		        'label'                 =>  __( 'Quotation mark color', 'tailor-woocommerce'  ),
+		        'type'                  =>  'colorpicker',
+		        'priority'              =>  $priority += 10,
+		        'section'               =>  'colors',
+	        ) );
 
 	        $priority = 0;
 	        $attribute_control_types = array(
 		        'class',
 		        'padding',
+		        'padding_tablet',
+		        'padding_mobile',
 		        'margin',
+		        'margin_tablet',
+		        'margin_mobile',
 		        'border_style',
 		        'border_width',
+		        'border_width_tablet',
+		        'border_width_mobile',
 		        'border_radius',
 		        'shadow',
 		        'background_image',
 		        'background_repeat',
 		        'background_position',
 		        'background_size',
+		        'background_attachment',
 	        );
 	        $attribute_control_arguments = array();
 	        tailor_control_presets( $this, $attribute_control_types, $attribute_control_arguments, $priority );
@@ -121,7 +138,7 @@ if ( class_exists( 'Tailor_Element' ) && ! class_exists( 'Tailor_Testimonial_Ele
 
 		    if ( ! empty( $atts['quote_mark_color'] ) ) {
 			    $css_rules[] = array(
-				    'selectors'         =>  array( '.quote__content:before' ),
+				    'selectors'         =>  array( '.testimonial__content .tailor-element:first-child p:first-child::before' ),
 				    'declarations'      =>  array(
 					    'color'             =>  esc_attr( $atts['quote_mark_color'] ),
 				    ),

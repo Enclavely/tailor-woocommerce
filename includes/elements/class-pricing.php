@@ -140,15 +140,22 @@ if ( class_exists( 'Tailor_Element' ) && ! class_exists( 'Tailor_Pricing_Element
 		    $attribute_control_types = array(
 			    'class',
 			    'padding',
+			    'padding_tablet',
+			    'padding_mobile',
 			    'margin',
+			    'margin_tablet',
+			    'margin_mobile',
 			    'border_style',
 			    'border_width',
+			    'border_width_tablet',
+			    'border_width_mobile',
 			    'border_radius',
 			    'shadow',
 			    'background_image',
 			    'background_repeat',
 			    'background_position',
 			    'background_size',
+			    'background_attachment',
 		    );
 		    $attribute_control_arguments = array();
 		    tailor_control_presets( $this, $attribute_control_types, $attribute_control_arguments, $priority );

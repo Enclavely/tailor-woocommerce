@@ -29,6 +29,7 @@ if ( ! function_exists( 'tailor_shortcode_products' ) ) {
 		    $class[] = 'is-lightbox-gallery';
 	    }
 
+	    $data = array();
 	    if ( 'carousel' == $atts['layout'] ) {
 		    $items_per_row = (string) intval( $atts['items_per_row'] );
 		    $data = array(

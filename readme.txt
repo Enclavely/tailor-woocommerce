@@ -1,8 +1,8 @@
 === Tailor Page Builder: WooCommerce Extension ===
 Tags: frontend, woocommerce, ecommerce, products, product, shop, extension, tailor, content, layout creator, responsive, page builder, visual composer, drag and drop builder, frontend editor
 Requires at least: 4.3
-Tested up to: 4.6.2
-Stable tag: 1.2.0
+Tested up to: 4.7
+Stable tag: 1.2.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl.html
 Contributors: andrew.worsfold
@@ -68,12 +68,16 @@ Yes, however, users should be directed to the WordPress plugin repository to ins
 
 == Changelog ==
 
+= 1.2.1 =
+* Added - Responsive settings for the Products, Testimonial and Pricing elements.
+* Added - Quotation mark color setting to Testimonial element.
+
+Note: This version requires Tailor version 1.7.2 (or newer).
+
 = 1.2.0 =
 * Added - Filter for HTML attributes of default elements.
 * Added - Filter for the rendered HTML of default elements.
 * Added - Image link option to the Products element to align with the Posts element.
-
-Note: This version requires Tailor version 1.7.0 (or newer).
 
 = 1.1.1 =
 * Added - Filter to modify the rendered HTML of a given element.
